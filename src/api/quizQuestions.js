@@ -1,86 +1,86 @@
 var quizQuestions = [
     {
-        question: "What franchise would you rather play a game from?",
+        question: "What does the clock speed indicate?",
         answers: [
             {
+                type: "Wrong",
+                content: "CPU cores"
+            },
+            {
                 type: "Correct",
-                content: "Halo"
+                content: "Tasks per second"
             },
             {
                 type: "Wrong",
-                content: "Pokemon"
-            },
-            {
-                type: "Wrong",
-                content: "Uncharted"
+                content: "How much storage the CPU has"
             }
         ]
     },
     {
-        question: "Which console would you prefer to play with friends?",
+        question: "What type of CPU does a desktop computer have?",
         answers: [
             {
                 type: "Correct",
-                content: "X-Box"
+                content: "CISC"
             },
             {
                 type: "Wrong",
-                content: "Nintendo 64"
+                content: "RISC"
             },
             {
                 type: "Wrong",
-                content: "Playstation 1"
+                content: "DISCO"
             }
         ]
     },
     {
-        question: "Which of these racing franchises would you prefer to play a game from?",
+        question: "What is the cache inside a CPU?",
         answers: [
             {
                 type: "Correct",
-                content: "Forza"
+                content: "Super fast storage"
             },
             {
                 type: "Wrong",
-                content: "Mario Kart"
+                content: "The part where calculcations are done"
             },
             {
                 type: "Wrong",
-                content: "Gran Turismo"
+                content: "The part that manages tasks"
             }
         ]
     },
     {
-        question: "Which of these games do you think is best?",
+        question: "How much faster is a dual core CPU than a single core CPU?",
         answers: [
             {
                 type: "Correct",
-                content: "BioShock"
+                content: "under twice as fast"
             },
             {
                 type: "Wrong",
-                content: "The Legend of Zelda: Ocarina of Time"
+                content: "twice as fast"
             },
             {
                 type: "Wrong",
-                content: "Final Fantasy VII"
+                content: "over twice as fast"
             }
         ]
     },
     {
-        question: "What console would you prefer to own?",
+        question: "If a CPU overheats, this can damaged files saved on the PC",
         answers: [
             {
                 type: "Correct",
-                content: "X-Box One"
+                content: "True"
             },
             {
                 type: "Wrong",
-                content: "Wii U"
+                content: "False"
             },
             {
                 type: "Wrong",
-                content: "Playstation 4"
+                content: "a CPU cannot overheat"
             }
         ]
     }
