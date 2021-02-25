@@ -4,5 +4,5 @@ const PATH = require('path');
 
 const PORT = process.env.PORT || 5000;
 
-APP.use(EXPRESS.static(PATH.join('cic-website', 'build')));
+APP.use(EXPRESS.static(PATH.join(__dirname, 'build')));
 APP.listen(PORT);
