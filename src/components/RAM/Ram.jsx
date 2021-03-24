@@ -16,7 +16,7 @@ class Ram extends Component {
                 <Router>
                         <nav className="green darken-3">
                             <div className="nav-wrapper">
-                                <a className="brand-logo center">RAM & Storage</a>
+                                <a className="brand-logo center">RAM vs Storage</a>
                                 <ul>
                                     <li>
                                         <NavLink 

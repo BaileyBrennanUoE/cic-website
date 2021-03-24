@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import quizQuestions from '../api/quizQuestions';
-import Quiz from './Quiz';
-import Result from './Result';
-import logo from '../svg/logo.svg';
-import Question from './Question';
+import quizQuestions from '../../api/cpuQuizQuestions';
+import Quiz from '../Quiz/Quiz';
+import Result from '../Quiz/Result';
 
-class CPU_Quiz extends Component {
+class COMP_Quiz extends Component {
     
   constructor(props) {
     super(props);
@@ -18,7 +16,8 @@ class CPU_Quiz extends Component {
       answer: '',
       answersCount: {},
       correctAnswers: 0,
-      result: ''
+      result: '',
+      wrongAnswers: {}
     };
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
   }
@@ -79,6 +78,19 @@ class CPU_Quiz extends Component {
 
   handleAnswerSelected(event) {
     this.setUserAnswer(event.currentTarget.value);
+    console.log(event.currentTarget.value);
+    if(event.currentTarget.value === 'Wrong'){
+      console.log("Changing wrongAnswers");
+      this.setState((state) => ({
+        wrongAnswers: {
+          ...state.wrongAnswers,
+          [state.counter]: (state.question)
+        }
+      }));
+    }
+    console.log(this.state.counter);
+    console.log(this.state.question);
+    console.log(this.state.wrongAnswers);
     if (this.state.questionId < quizQuestions.length) {
       setTimeout(() => this.setNextQuestion(), 300);
     } else {
@@ -116,6 +128,7 @@ class CPU_Quiz extends Component {
       <Result 
         correctAnswers={this.state.correctAnswers}
         questionTotal={quizQuestions.length}
+        wrongAnswers={this.state.wrongAnswers}
       />
     );
   }
@@ -123,9 +136,6 @@ class CPU_Quiz extends Component {
   render() {
     return (
       <div className="App">
-        <div className="header">
-          <h2>CPU Quiz</h2>
-        </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
     );
@@ -133,4 +143,4 @@ class CPU_Quiz extends Component {
 
 }
 
-export default CPU_Quiz;
+export default COMP_Quiz;

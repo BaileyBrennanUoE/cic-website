@@ -16,7 +16,8 @@ class CPU_Quiz extends Component {
       answer: '',
       answersCount: {},
       correctAnswers: 0,
-      result: ''
+      result: '',
+      wrongAnswers: {}
     };
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
   }
@@ -77,6 +78,19 @@ class CPU_Quiz extends Component {
 
   handleAnswerSelected(event) {
     this.setUserAnswer(event.currentTarget.value);
+    console.log(event.currentTarget.value);
+    if(event.currentTarget.value === 'Wrong'){
+      console.log("Changing wrongAnswers");
+      this.setState((state) => ({
+        wrongAnswers: {
+          ...state.wrongAnswers,
+          [state.counter]: (state.question)
+        }
+      }));
+    }
+    console.log(this.state.counter);
+    console.log(this.state.question);
+    console.log(this.state.wrongAnswers);
     if (this.state.questionId < quizQuestions.length) {
       setTimeout(() => this.setNextQuestion(), 300);
     } else {
@@ -114,6 +128,7 @@ class CPU_Quiz extends Component {
       <Result 
         correctAnswers={this.state.correctAnswers}
         questionTotal={quizQuestions.length}
+        wrongAnswers={this.state.wrongAnswers}
       />
     );
   }

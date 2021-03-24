@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class RAM_Revision extends Component {
+class COMP_Revision extends Component {
 
   render() {
     return (
@@ -60,4 +60,4 @@ class RAM_Revision extends Component {
 
 }
 
-export default RAM_Revision;
+export default COMP_Revision;

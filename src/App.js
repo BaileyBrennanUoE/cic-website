@@ -41,9 +41,9 @@ class App extends Component {
                 </li>
                 <li>
                   <NavLink 
-                    to="/Computer" 
+                    to="/COMP_Video" 
                     activeClassName="selected">
-                    What's in a Computer
+                    What's in a Computer?
                   </NavLink>
                 </li>
                 <li>
@@ -64,7 +64,7 @@ class App extends Component {
             </div>
           </nav>        
           <Switch>
-            <Route path="/Computer">
+            <Route path="/COMP_Video">
               <Computer />
             </Route>
             <Route path="/CPU_Video">
