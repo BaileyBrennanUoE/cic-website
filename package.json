@@ -49,6 +49,5 @@
   "main": "server.js",
   "engines": {
     "node": ">=14.4.0"
-  },
-  "homepage": "https://baileybrennanuoe.github.io/rex-support/"
+  }
 }
