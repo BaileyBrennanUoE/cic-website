@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/cic-website/static/css/main.e8be4ba2.chunk.css",
-    "main.js": "/cic-website/static/js/main.c54480ef.chunk.js",
-    "main.js.map": "/cic-website/static/js/main.c54480ef.chunk.js.map",
+    "main.css": "/cic-website/static/css/main.c4efddf8.chunk.css",
+    "main.js": "/cic-website/static/js/main.807390ba.chunk.js",
+    "main.js.map": "/cic-website/static/js/main.807390ba.chunk.js.map",
     "runtime-main.js": "/cic-website/static/js/runtime-main.ee7ac08b.js",
     "runtime-main.js.map": "/cic-website/static/js/runtime-main.ee7ac08b.js.map",
-    "static/js/2.932b1c95.chunk.js": "/cic-website/static/js/2.932b1c95.chunk.js",
-    "static/js/2.932b1c95.chunk.js.map": "/cic-website/static/js/2.932b1c95.chunk.js.map",
+    "static/js/2.19ff56be.chunk.js": "/cic-website/static/js/2.19ff56be.chunk.js",
+    "static/js/2.19ff56be.chunk.js.map": "/cic-website/static/js/2.19ff56be.chunk.js.map",
     "index.html": "/cic-website/index.html",
-    "static/css/main.e8be4ba2.chunk.css.map": "/cic-website/static/css/main.e8be4ba2.chunk.css.map",
-    "static/js/2.932b1c95.chunk.js.LICENSE.txt": "/cic-website/static/js/2.932b1c95.chunk.js.LICENSE.txt",
+    "static/css/main.c4efddf8.chunk.css.map": "/cic-website/static/css/main.c4efddf8.chunk.css.map",
+    "static/js/2.19ff56be.chunk.js.LICENSE.txt": "/cic-website/static/js/2.19ff56be.chunk.js.LICENSE.txt",
     "static/media/index.css": "/cic-website/static/media/icon-check.12ef56db.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ee7ac08b.js",
-    "static/js/2.932b1c95.chunk.js",
-    "static/css/main.e8be4ba2.chunk.css",
-    "static/js/main.c54480ef.chunk.js"
+    "static/js/2.19ff56be.chunk.js",
+    "static/css/main.c4efddf8.chunk.css",
+    "static/js/main.807390ba.chunk.js"
   ]
 }
