@@ -44,7 +44,7 @@ class CPU_Revision extends Component {
                 </blockquote>
             </blockquote>
             <blockquote  className="col s5 flow-text">
-                Type of CPUs <br/>
+                Types of CPU <br/>
                 <blockquote>
                   CISC - found in desktop computers, larger and power hungry like super cars
                 </blockquote>
