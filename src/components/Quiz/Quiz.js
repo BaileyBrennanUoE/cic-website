@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Question from '../components/Question';
-import QuestionCount from '../components/QuestionCount';
-import AnswerOption from '../components/AnswerOption';
+import Question from '../Quiz/Question';
+import QuestionCount from '../Quiz/QuestionCount';
+import AnswerOption from '../Quiz/AnswerOption';
 
 function Quiz(props) {
     function renderAnswerOptions(key) {
@@ -18,15 +18,20 @@ function Quiz(props) {
         );
     }
     return (
-        <div className="quiz">
+        <div className="quiz section">
             <QuestionCount
                 counter={props.questionId}
                 total={props.questionTotal}
             />
             <Question content={props.question} />
-            <ul className="answerOptions">
-                {props.answerOptions.map(renderAnswerOptions)}
-            </ul>
+            <div className="containter row">
+                <div className="col s12">
+                    <ul className="answerOptions">
+                        {props.answerOptions.map(renderAnswerOptions)}
+                    </ul>
+                </div>
+            </div>
+            
         </div>
     );
 }

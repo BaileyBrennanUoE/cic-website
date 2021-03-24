@@ -6,6 +6,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("./images/cartoon-jungle-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 code {
@@ -15,13 +19,6 @@ code {
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background: #eee;
-  font-family: sans-serif;
 }
 
 .container {
@@ -145,4 +142,29 @@ body {
 .fade-appear.fade-appear-active {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
+}
+
+blockquote{
+  margin: 20px 0 20px 11px;
+  padding-left: 1rem;
+  border-left: 5px solid #2e7d32 ; /* Just change the color value and that's it*/
+}
+
+.container {
+  max-width: 1280px;
+  width: 90%;
+}
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 70%;
+  }
+}
+
+.flex {
+  min-height: 85vh;  /*or use calc(100vh - header_height)*/
 }

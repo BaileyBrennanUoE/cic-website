@@ -3,12 +3,12 @@ var quizQuestions = [
         question: "What does the clock speed indicate?",
         answers: [
             {
-                type: "Wrong",
-                content: "CPU cores"
-            },
-            {
                 type: "Correct",
                 content: "Tasks per second"
+            },
+            {
+                type: "Wrong",
+                content: "CPU cores"
             },
             {
                 type: "Wrong",

@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import quizQuestions from '../api/quizQuestions';
-import Quiz from '../components/Quiz';
-import Result from '../components/Result';
-import logo from '../svg/logo.svg';
-import Question from '../components/Question';
+import quizQuestions from '../../api/cpuQuizQuestions';
+import Quiz from '../Quiz/Quiz';
+import Result from '../Quiz/Result';
 
-class CPU extends Component {
+class CPU_Quiz extends Component {
     
   constructor(props) {
     super(props);
@@ -123,9 +121,6 @@ class CPU extends Component {
   render() {
     return (
       <div className="App">
-        <div className="header">
-          <h2>CPU Quiz</h2>
-        </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
     );
@@ -133,4 +128,4 @@ class CPU extends Component {
 
 }
 
-export default CPU;
+export default CPU_Quiz;
