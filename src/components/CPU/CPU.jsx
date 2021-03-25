@@ -8,6 +8,7 @@ import {
 import CPU_Quiz from '../CPU/CPU_Quiz';
 import CPU_Video from '../CPU/CPU_Video';
 import CPU_Revision from '../CPU/CPU_Revision';
+import CPU_Practical from '../CPU/CPU_Practical';
 
 class CPU extends Component {
     render() {
@@ -39,6 +40,13 @@ class CPU extends Component {
                                             Quiz
                                         </NavLink>
                                     </li>
+                                    <li>
+                                        <NavLink 
+                                            to="/CPU_Practical" 
+                                            activeClassName="selected">
+                                            Practical
+                                        </NavLink>
+                                    </li>
                                 </ul>
                             </div>
                         </nav>        
@@ -51,6 +59,9 @@ class CPU extends Component {
                             </Route>
                             <Route path="/CPU_Quiz">
                                 <CPU_Quiz />
+                            </Route>
+                            <Route path="/CPU_Practical">
+                                <CPU_Practical />
                             </Route>
                         </Switch>
                 </Router>
