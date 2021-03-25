@@ -8,6 +8,7 @@ import {
 import COMP_Quiz from '../Computer/COMP_Quiz';
 import COMP_Video from '../Computer/COMP_Video';
 import COMP_Revision from '../Computer/COMP_Revision';
+import COMP_Practical from '../Computer/COMP_Practical';
 
 class Computer extends Component {
     render() {
@@ -39,6 +40,13 @@ class Computer extends Component {
                                             Quiz
                                         </NavLink>
                                     </li>
+                                    <li>
+                                        <NavLink 
+                                            to="/COMP_Practical" 
+                                            activeClassName="selected">
+                                            Practical
+                                        </NavLink>
+                                    </li>
                                 </ul>
                             </div>
                         </nav>        
@@ -51,6 +59,9 @@ class Computer extends Component {
                             </Route>
                             <Route path="/COMP_Quiz">
                                 <COMP_Quiz />
+                            </Route>
+                            <Route path="/COMP_Practical">
+                                <COMP_Practical />
                             </Route>
                         </Switch>
                 </Router>

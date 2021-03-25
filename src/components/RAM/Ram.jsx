@@ -8,6 +8,7 @@ import {
 import RAM_Quiz from '../RAM/RAM_Quiz';
 import RAM_Video from '../RAM/RAM_Video';
 import RAM_Revision from '../RAM/RAM_Revision';
+import RAM_Practical from '../RAM/RAM_Practical';
 
 class Ram extends Component {
     render() {
@@ -39,6 +40,13 @@ class Ram extends Component {
                                             Quiz
                                         </NavLink>
                                     </li>
+                                    <li>
+                                        <NavLink 
+                                            to="/RAM_Practical" 
+                                            activeClassName="selected">
+                                            Practical
+                                        </NavLink>
+                                    </li>
                                 </ul>
                             </div>
                         </nav>        
@@ -51,6 +59,9 @@ class Ram extends Component {
                             </Route>
                             <Route path="/RAM_Quiz">
                                 <RAM_Quiz />
+                            </Route>
+                            <Route path="/RAM_Practical">
+                                <RAM_Practical />
                             </Route>
                         </Switch>
                 </Router>
