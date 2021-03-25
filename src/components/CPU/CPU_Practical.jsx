@@ -71,12 +71,19 @@ class CPU_Practical extends Component {
                     <details>
                         <summary>Questions</summary>
                         <ul>
-                            <li>How old is Lucy?</li>
-                            <li>Who got Bob's daughter into her hobby?</li>
-                            <li>Who bought Bob's twin a bike?</li>
-                            <li>Who could have helped Bob when he hurt himself at his birthday party?</li>
+                            <li>What relation is the smallest person in the family to Bob?</li>
+                            <li>How old is Dylan?</li>
+                            <li>How old will Bob be when Lucy is 30?</li>
+                            <li>What is Lucy's uncle's hobby?</li>
                         </ul>
                     </details> 
+                    How did that run go? Was it much easier and quicker? <br/>
+                    The same goes for the CPU! Imagine the bag as the computer's RAM and the desk as the CPU's cache, it keeps the most commonly used data on the desk so it can answer common questions super fast!
+                    <blockquote className="flow-text">
+                        Further pracitcal ideas:
+                    </blockquote>
+                    If you thought that was fun, try teaming up with another person and doing Parts 1 & 2 again! Except when the timer goes split the tasks evenly then do the questions. This will give you a good idea how
+                    multi-core CPUs work!
                 </div>
             </div>
         </div>
