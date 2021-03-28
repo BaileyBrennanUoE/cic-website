@@ -1,86 +1,86 @@
 var quizQuestions = [
     {
-        question: "What does the clock speed indicate?",
+        question: "What part is the brain of the computer?",
         answers: [
             {
                 type: "Correct",
-                content: "Tasks per second"
+                content: "CPU"
             },
             {
                 type: "Wrong",
-                content: "CPU cores"
+                content: "GPU"
             },
             {
                 type: "Wrong",
-                content: "How much storage the CPU has"
+                content: "RAM"
             }
         ]
     },
     {
-        question: "What type of CPU does a desktop computer have?",
+        question: "What does the CPU use as a quick notebook during tasks?",
         answers: [
             {
                 type: "Correct",
-                content: "CISC"
+                content: "RAM"
             },
             {
                 type: "Wrong",
-                content: "RISC"
+                content: "Storage"
             },
             {
                 type: "Wrong",
-                content: "DISCO"
+                content: "GPU"
             }
         ]
     },
     {
-        question: "What is the cache inside a CPU?",
+        question: "What helps the CPU show pictures on your screen?",
         answers: [
             {
                 type: "Correct",
-                content: "Super fast storage"
+                content: "GPU"
             },
             {
                 type: "Wrong",
-                content: "The part where calculcations are done"
+                content: "Power Supply"
             },
             {
                 type: "Wrong",
-                content: "The part that manages tasks"
+                content: "It does not need any help"
             }
         ]
     },
     {
-        question: "How much faster is a dual core CPU than a single core CPU?",
+        question: "What do you put the CPU, RAM and GPU into so they can talk together?",
         answers: [
             {
                 type: "Correct",
-                content: "under twice as fast"
+                content: "Motherboard"
             },
             {
                 type: "Wrong",
-                content: "twice as fast"
+                content: "Parentboard"
             },
             {
                 type: "Wrong",
-                content: "over twice as fast"
+                content: "Fatherboard"
             }
         ]
     },
     {
-        question: "If a CPU overheats, this can damaged files saved on the PC",
+        question: "What gives the computer the electricity to run?",
         answers: [
             {
                 type: "Correct",
-                content: "True"
+                content: "Power Supply"
             },
             {
                 type: "Wrong",
-                content: "False"
+                content: "Juice Maker"
             },
             {
                 type: "Wrong",
-                content: "a CPU cannot overheat"
+                content: "Hamster wheel"
             }
         ]
     }

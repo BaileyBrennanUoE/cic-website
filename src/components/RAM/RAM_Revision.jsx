@@ -7,49 +7,55 @@ class RAM_Revision extends Component {
       <div className="App">
         <div className="section">
           <div className="row">
-            <blockquote  className="col s5 offset-s1 flow-text">
-                CPU Cores <br/>
+          <blockquote  className="col s5 offset-s1 flow-text">
+                RAM <br/>
                 <blockquote>
-                  The main number crunching centre
+                  Random Access Memory - or just memory for short
                 </blockquote>
                 <blockquote>
-                  Home to the Cache
+                  Shown in Gigabytes (GB)
                 </blockquote>
                 <blockquote>
-                  More cores, the faster it is but its speed is not additive (e.g. a dual core CPU is not as fast as 2 single core CPUs together)
-                </blockquote>
-            </blockquote>
-            <blockquote  className="col s5 flow-text">
-                Clock Speed <br/>
-                <blockquote>
-                  Tells us how fast the CPU is
-                </blockquote>
-                <blockquote>
-                  Shown in Gigahertz(Hz)
-                </blockquote>
-                <blockquote>
-                  The higher the clock speed, the hotter the CPU gets - too hot and it can destroy files on the computer even!
-                </blockquote>
-            </blockquote>
-            <blockquote  className="col s5 offset-s1 flow-text">
-                Cache <br/>
-                <blockquote>
-                  Small, super fast storage for the CPU
-                </blockquote>
-                <blockquote>
-                  Like RAM but much smaller - very expensive as well
-                </blockquote>
-                <blockquote>
-                  The CPU uses cache like its memory, most common tasks are kept there
+                  The more Gigabytes means the computer can do more tasks at the same time
                 </blockquote>
             </blockquote>
             <blockquote  className="col s5 flow-text">
-                Type of CPUs <br/>
+                Storage <br/>
                 <blockquote>
-                  CISC - found in desktop computers, larger and power hungry like super cars
+                Shown in Gigabytes (GB) as well!
                 </blockquote>
                 <blockquote>
-                  RISC - found in smartphones/tablets computers, smaller and less power greedy like a tiny electric car
+                  Bank of information
+                </blockquote>
+                <blockquote>
+                  Lends RAM bits of information for the CPU's tasks then gets any changes back again
+                </blockquote>
+            </blockquote>
+            <blockquote  className="col s5 offset-s1 flow-text">
+                HDD <br/>
+                <blockquote>
+                  Hard Disk Drive
+                </blockquote>
+                <blockquote>
+                  Most common type of storage in a desktop computer
+                </blockquote>
+                <blockquote>
+                  Needle inside goes round and reads little dots with magnets
+                </blockquote>
+            </blockquote>
+            <blockquote  className="col s5 flow-text">
+                SSD<br/>
+                <blockquote>
+                  Solid State Drive
+                </blockquote>
+                <blockquote>
+                  Most common type of storage in phones
+                </blockquote>
+                <blockquote>
+                  Has no moving parts, work like a slower version of RAM
+                </blockquote>
+                <blockquote>
+                  Costs much more per GB than HDD
                 </blockquote>
             </blockquote>
           </div>

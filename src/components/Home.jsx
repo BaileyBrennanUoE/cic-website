@@ -12,7 +12,15 @@ class Home extends Component {
                         <div className="App">
                             <div className="section">
                                 <div className="row">
-                                    <blockquote  className="col s5 offset-s1 flow-text">
+                                <blockquote  className="col s5 offset-s1 flow-text">
+                                        Welcome to Rex Support!<br/>
+                                        <blockquote>
+                                            Here you will learn about loads of different topics about computers! <br/>
+                                            From CPUs to RAM, there are many small parts that play a role in getting screen to show what you want when you want it.
+                                            Here, to the right and below, is a breakdown of the current main topics.
+                                        </blockquote>
+                                </blockquote>
+                                    <blockquote  className="col s5 flow-text">
                                         What's in a Computer?<br/>
                                         <blockquote>
                                             CPU
@@ -30,7 +38,7 @@ class Home extends Component {
                                             Power Supply
                                         </blockquote>
                                     </blockquote>
-                                    <blockquote  className="col s5 flow-text">
+                                    <blockquote  className="col s5 offset-s1 flow-text">
                                         CPU <br/>
                                         <blockquote>
                                         Cores
@@ -48,13 +56,16 @@ class Home extends Component {
                                     <blockquote  className="col s5 flow-text">
                                         RAM vs Storage <br/>
                                         <blockquote>
-                                        Small, super fast storage for the CPU
+                                        RAM
                                         </blockquote>
                                         <blockquote>
-                                        Like RAM but much smaller - very expensive as well
+                                        Storage
                                         </blockquote>
                                         <blockquote>
-                                        The CPU uses cache like its memory, most common tasks are kept there
+                                        HDD
+                                        </blockquote>
+                                        <blockquote>
+                                        SSD
                                         </blockquote>
                                     </blockquote>
                                 </div>

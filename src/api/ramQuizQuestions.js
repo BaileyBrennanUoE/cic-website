@@ -1,74 +1,40 @@
 var quizQuestions = [
     {
-        question: "What does the clock speed indicate?",
+        question: "Are RAM and Storage the same thing?",
         answers: [
             {
                 type: "Correct",
-                content: "Tasks per second"
+                content: "False"
             },
             {
                 type: "Wrong",
-                content: "CPU cores"
+                content: "True"
             },
             {
                 type: "Wrong",
-                content: "How much storage the CPU has"
+                content: "Not exactly, but close enough"
             }
         ]
     },
     {
-        question: "What type of CPU does a desktop computer have?",
+        question: "What are RAM and Storage shown in?",
         answers: [
             {
                 type: "Correct",
-                content: "CISC"
+                content: "Gigabytes"
             },
             {
                 type: "Wrong",
-                content: "RISC"
+                content: "Greatbites"
             },
             {
                 type: "Wrong",
-                content: "DISCO"
+                content: "Giantbits"
             }
         ]
     },
     {
-        question: "What is the cache inside a CPU?",
-        answers: [
-            {
-                type: "Correct",
-                content: "Super fast storage"
-            },
-            {
-                type: "Wrong",
-                content: "The part where calculcations are done"
-            },
-            {
-                type: "Wrong",
-                content: "The part that manages tasks"
-            }
-        ]
-    },
-    {
-        question: "How much faster is a dual core CPU than a single core CPU?",
-        answers: [
-            {
-                type: "Correct",
-                content: "under twice as fast"
-            },
-            {
-                type: "Wrong",
-                content: "twice as fast"
-            },
-            {
-                type: "Wrong",
-                content: "over twice as fast"
-            }
-        ]
-    },
-    {
-        question: "If a CPU overheats, this can damaged files saved on the PC",
+        question: "The more RAM a computer has the more tasks it can do?",
         answers: [
             {
                 type: "Correct",
@@ -80,7 +46,41 @@ var quizQuestions = [
             },
             {
                 type: "Wrong",
-                content: "a CPU cannot overheat"
+                content: "RAM does not change this"
+            }
+        ]
+    },
+    {
+        question: "What does most common type of desktop computer storage?",
+        answers: [
+            {
+                type: "Correct",
+                content: "Hard Disk Drive"
+            },
+            {
+                type: "Wrong",
+                content: "Solid State Drive"
+            },
+            {
+                type: "Wrong",
+                content: "USB Drive"
+            }
+        ]
+    },
+    {
+        question: "If you had very little money to spend on storage, what would you buy?",
+        answers: [
+            {
+                type: "Correct",
+                content: "Hard Disk Drive"
+            },
+            {
+                type: "Wrong",
+                content: "Solid State Drive"
+            },
+            {
+                type: "Wrong",
+                content: "RAM"
             }
         ]
     }

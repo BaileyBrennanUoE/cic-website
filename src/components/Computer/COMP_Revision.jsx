@@ -7,49 +7,64 @@ class COMP_Revision extends Component {
       <div className="App">
         <div className="section">
           <div className="row">
-            <blockquote  className="col s5 offset-s1 flow-text">
-                CPU Cores <br/>
+            <blockquote  className="col s4 flow-text">
+                CPU <br/>
                 <blockquote>
-                  The main number crunching centre
+                  The brain of the computer
                 </blockquote>
                 <blockquote>
-                  Home to the Cache
+                  Can come in many shapes and sizes
                 </blockquote>
                 <blockquote>
-                  More cores, the faster it is but its speed is not additive (e.g. a dual core CPU is not as fast as 2 single core CPUs together)
-                </blockquote>
-            </blockquote>
-            <blockquote  className="col s5 flow-text">
-                Clock Speed <br/>
-                <blockquote>
-                  Tells us how fast the CPU is
-                </blockquote>
-                <blockquote>
-                  Shown in Gigahertz(Hz)
-                </blockquote>
-                <blockquote>
-                  The higher the clock speed, the hotter the CPU gets - too hot and it can destroy files on the computer even!
+                  Can get too hot, so needs a fan
                 </blockquote>
             </blockquote>
-            <blockquote  className="col s5 offset-s1 flow-text">
-                Cache <br/>
+            <blockquote  className="col s4 flow-text">
+                RAM <br/>
                 <blockquote>
-                  Small, super fast storage for the CPU
+                  Used like a notebook by the CPU
                 </blockquote>
                 <blockquote>
-                  Like RAM but much smaller - very expensive as well
+                  Keeps information of recent tasks
                 </blockquote>
                 <blockquote>
-                  The CPU uses cache like its memory, most common tasks are kept there
+                  Is not kept forever, it is deleted once the task is over
                 </blockquote>
             </blockquote>
-            <blockquote  className="col s5 flow-text">
-                Type of CPUs <br/>
+            <blockquote  className="col s4 flow-text">
+                Storage <br/>
                 <blockquote>
-                  CISC - found in desktop computers, larger and power hungry like super cars
+                  Stores computer files, like your homework
                 </blockquote>
                 <blockquote>
-                  RISC - found in smartphones/tablets computers, smaller and less power greedy like a tiny electric car
+                  Is kept until deleted by computer owner
+                </blockquote>
+                <blockquote>
+                  Can be fast or slow, depending on the computer's needs
+                </blockquote>
+            </blockquote>
+            <blockquote  className="col s4 flow-text">
+                GPU <br/>
+                <blockquote>
+                  Helps the CPU do sums or show games on your screen when there is too much work for it alone
+                </blockquote>
+            </blockquote>
+            <blockquote  className="col s4 flow-text">
+                Motherboard <br/>
+                <blockquote>
+                  Where the CPU, RAM and GPU are placed so they can talk to each other
+                </blockquote>
+                <blockquote>
+                  Spreads the power to each part in the computer
+                </blockquote>
+            </blockquote>
+            <blockquote  className="col s4 flow-text">
+                Power Supply <br/>
+                <blockquote>
+                  Takes the power from your wall and gives it to the Motherboard
+                </blockquote>
+                <blockquote>
+                  Is required to make the computer run
                 </blockquote>
             </blockquote>
           </div>

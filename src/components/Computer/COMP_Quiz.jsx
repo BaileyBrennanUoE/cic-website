@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import quizQuestions from '../../api/cpuQuizQuestions';
+import quizQuestions from '../../api/computerQuizQuestions';
+import quizHints from '../../api/computerQuizHints';
 import Quiz from '../Quiz/Quiz';
 import Result from '../Quiz/Result';
 
@@ -17,7 +18,8 @@ class COMP_Quiz extends Component {
       answersCount: {},
       correctAnswers: 0,
       result: '',
-      wrongAnswers: {}
+      wrongAnswers: {},
+      questionAndAnswers: {}
     };
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
   }
@@ -77,9 +79,25 @@ class COMP_Quiz extends Component {
   }
 
   handleAnswerSelected(event) {
-    this.setUserAnswer(event.currentTarget.value);
-    console.log(event.currentTarget.value);
-    if(event.currentTarget.value === 'Wrong'){
+    this.setUserAnswer(event.currentTarget.id);
+
+    var stateQuestion = this.state.question;
+    var stateObject = function() {
+      var returnObj = {
+        'question' : stateQuestion,
+        'answer' : this.currentTarget.value
+      };
+         return returnObj;
+    }.bind(event)();
+
+    this.setState((state) => ({
+      questionAndAnswers: {
+        ...state.questionAndAnswers,
+        [stateObject.question] : stateObject.answer
+      }
+    }));
+
+    if(event.currentTarget.id === 'Wrong'){
       console.log("Changing wrongAnswers");
       this.setState((state) => ({
         wrongAnswers: {
@@ -88,9 +106,6 @@ class COMP_Quiz extends Component {
         }
       }));
     }
-    console.log(this.state.counter);
-    console.log(this.state.question);
-    console.log(this.state.wrongAnswers);
     if (this.state.questionId < quizQuestions.length) {
       setTimeout(() => this.setNextQuestion(), 300);
     } else {
@@ -111,6 +126,7 @@ class COMP_Quiz extends Component {
   }
 
   renderQuiz() {
+    console.log(quizHints);
     return (
       <Quiz 
           answer={this.state.answer}
@@ -128,7 +144,9 @@ class COMP_Quiz extends Component {
       <Result 
         correctAnswers={this.state.correctAnswers}
         questionTotal={quizQuestions.length}
+        questionAndAnswers={this.state.questionAndAnswers}
         wrongAnswers={this.state.wrongAnswers}
+        quizHints={quizHints}
       />
     );
   }
