@@ -4,28 +4,39 @@ import PropTypes from 'prop-types';
 function Result(prop) {
     return (
         <div className="result section">
-                <blockquote className="flow-text">
-                    You got {prop.correctAnswers} out of {prop.questionTotal} correct <br/>
-                    {prop.correctAnswers===prop.questionTotal  ? (
+                    <blockquote className="flow-text">
+                    You got {prop.correctAnswers} out of {prop.questionTotal} correct! Check below for your results:<br/>
+                    </blockquote>
+                    {/* {prop.correctAnswers===prop.questionTotal  ? (
                         <p>Well done you got full marks!</p>
                     ) : (
-                        <div>
-                            <p>Watch the video and look over the info sheet again then try again!</p>
-                            <br/>Questions you got incorrect:
-                            {_renderObject(prop.wrongAnswers)}
-                        </div>
-                    )}
-                </blockquote>
+                        <p>Watch the video and look over the info sheet again then try again!</p>
+                    )} */}
+                    <div className="row">
+                    {_renderObject(prop.questionAndAnswers, prop.wrongAnswers, prop.quizHints)}
+                    </div>
         </div>
     );
 }
 
-function _renderObject(object){
-    return Object.keys(object).map((obj, i) => {
+function _renderObject(questionAndAnswers, wrongAnswers, quizHints){
+    var questionKeySet = Object.keys(questionAndAnswers);
+    return Object.keys(questionAndAnswers).map((obj, i) => {
         return (
-            <blockquote>
-                &emsp;{object[obj]}
-            </blockquote>
+            <div>
+                {Object.values(wrongAnswers).includes(questionKeySet[i]) ? (
+                        <div className="col s7 offset-s2 card-panel red lighten-2 flow-text">
+                            {questionKeySet[i]} <br/>
+                            &emsp; &emsp; Answer: {questionAndAnswers[obj]} <br/>
+                            &emsp; &emsp; Hint: {quizHints[questionKeySet[i]]}
+                        </div>
+                    ) : (
+                        <div className="col s7 offset-s2 card-panel green lighten-2 flow-text">
+                            {questionKeySet[i]} <br/>&emsp; &emsp; Answer: {questionAndAnswers[obj]}
+                        </div>
+                    ) 
+                }
+            </div>
         )
     })
 }
@@ -34,6 +45,7 @@ Result.propTypes = {
     questionTotal: PropTypes.number.isRequired,
     correctAnswers: PropTypes.number.isRequired,
     wrongAnswers: PropTypes.object.isRequired,
+    questionAndAnswers: PropTypes.object.isRequired,
     isFinished: PropTypes.number.isRequired
 };
 

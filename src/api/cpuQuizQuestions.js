@@ -1,6 +1,6 @@
 var quizQuestions = [
     {
-        question: "What does the clock speed indicate?",
+        question: "What does the clock speed tell us?",
         answers: [
             {
                 type: "Correct",
@@ -51,7 +51,7 @@ var quizQuestions = [
         ]
     },
     {
-        question: "How much faster is a dual core CPU than a single core CPU?",
+        question: "How much faster is a two core CPU than a single core CPU?",
         answers: [
             {
                 type: "Correct",
@@ -68,7 +68,7 @@ var quizQuestions = [
         ]
     },
     {
-        question: "If a CPU overheats, this can damaged files saved on the PC",
+        question: "If a CPU gets too hot, this can damaged files saved on the PC",
         answers: [
             {
                 type: "Correct",
@@ -80,7 +80,7 @@ var quizQuestions = [
             },
             {
                 type: "Wrong",
-                content: "a CPU cannot overheat"
+                content: "a CPU cannot get too hot"
             }
         ]
     }
