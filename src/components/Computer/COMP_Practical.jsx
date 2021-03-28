@@ -11,7 +11,7 @@ class COMP_Practical extends Component {
                         Large Practical
                         <blockquote>
                         Try doing the practical activities of the other parts altogether!<br/>
-                        Get the bits of paper from the CPU activityand place them out like descrived in the RAM vs Storage activity. 
+                        Get the bits of paper from the CPU activity and place them out like described in the RAM vs Storage activity. 
                         You can add more family members and linked facts about them! <br/>
                         So for every round you have to do the following:
                             <blockquote>Get a question</blockquote>
