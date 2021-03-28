@@ -49,7 +49,7 @@ class CPU_Practical extends Component {
                         </div>
                     </div>
                     Try and memorise the cards. Get a stopwatch ready, now put the pieces of paper in a bag and try and answer the questions below, 
-                    each time pulling out a bit of paper that can answer the question and returning them before the next question(this can be more than one bit of paper!).<br/>
+                    each time pulling out a bit of paper randomly, until you can answer the question and returning them before the next question(this can be more than one bit of paper!).<br/>
                     When ready click below to reveal the questions:
                     <details>
                         <summary>Questions</summary>
@@ -80,7 +80,7 @@ class CPU_Practical extends Component {
                     How did that run go? Was it much easier and quicker? <br/>
                     The same goes for the CPU! Imagine the bag as the computer's RAM and the desk as the CPU's cache, it keeps the most commonly used data on the desk so it can answer common questions super fast!
                     <blockquote className="flow-text">
-                        Further pracitcal ideas:
+                        Further practical ideas:
                     </blockquote>
                     If you thought that was fun, try teaming up with another person and doing Parts 1 & 2 again! Except when the timer goes split the tasks evenly then do the questions. This will give you a good idea how
                     multi-core CPUs work!
